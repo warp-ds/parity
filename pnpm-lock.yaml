@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   css: ^3.0.0
+  drnm: ^0.9.0
   lightningcss: ^1.18.0
 
 dependencies:
   css: 3.0.0
+  drnm: 0.9.0
   lightningcss: 1.18.0
 
 packages:
@@ -33,6 +35,10 @@ packages:
     resolution: {integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==}
     engines: {node: '>=0.10'}
     hasBin: true
+    dev: false
+
+  /drnm/0.9.0:
+    resolution: {integrity: sha512-ZNkurkg7xoWPQNTf4TfUxS/lvm+zPve01xjLS/RUWCPr6OB3zBlM4Y2dIXkR6NsELojppfum8+wdWZ0vnjdwmg==}
     dev: false
 
   /inherits/2.0.4:

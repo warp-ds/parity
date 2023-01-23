@@ -1,17 +1,16 @@
 {
-  "name": "parity",
+  "name": "@warp-ds/fabric-parity-checker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "exports": "./index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "css": "^3.0.0",
+    "drnm": "^0.9.0",
     "lightningcss": "^1.18.0"
   }
 }
