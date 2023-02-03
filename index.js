@@ -21,6 +21,9 @@ export const buildList = () => {
       if (s.includes('.button')) return
       if (s.includes('.input')) return
       if (s.includes('.f-')) return
+      if (s.includes('space-')) return
+      if (s.includes('text-')) return
+      if (s.includes('ring-')) return
       if (s.includes('blue')) return
       if (s.includes('aqua')) return
       if (s.includes('green')) return
