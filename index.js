@@ -39,6 +39,7 @@ export const buildList = () => {
       if (s.includes('bg-current')) return
       if (s.includes('bg-white')) return
       if (s.includes('bg-transparent')) return
+      if (s.includes('bg-none')) return
       if (filterIgnoreList.includes(s.replace('.', ''))) return
       selectors.add(s)
     })
