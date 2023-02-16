@@ -36,6 +36,9 @@ export const buildList = () => {
       if (s.includes('bluegray')) return
       if (s.includes('gray')) return
       if (s.includes('focus-ring')) return
+      if (s.includes('bg-current')) return
+      if (s.includes('bg-white')) return
+      if (s.includes('bg-transparent')) return
       if (filterIgnoreList.includes(s.replace('.', ''))) return
       selectors.add(s)
     })
