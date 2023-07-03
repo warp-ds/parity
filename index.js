@@ -6,7 +6,7 @@ import drnm from 'drnm'
 
 const __dirname = drnm(import.meta.url)
 
-const notUsedInFinnRepos = ['decoration-clone', 'normal-nums', 'diagonal-fractions', 'stacked-fractions', 'list-checked > li', 'list-checked > li:before'];
+const notUsedInFinnRepos = ['decoration-clone', 'normal-nums', 'diagonal-fractions', 'stacked-fractions'];
 const useComponentsInstead = ['link.link--dark', 'segment-control', 'segment-control:focus-within', 'segment-control [type="radio"]', 'segment-control.segment-control--justified', 'field', 'field-hint'];
 const useArbitraryValueInstead = ['leading-24'];
 const usedToHandleTrojkaConflict = ['t-grid.grid']
@@ -53,9 +53,9 @@ export const buildList = () => {
       if (s.includes('bg-white')) return
       if (s.includes('bg-transparent')) return
       if (s.includes('bg-none')) return
-      if (s.includes('border-white')) return // Not used in Finn repos
       if (s.includes('border-current')) return // Suppported in drive
       if (s.includes('border-transparent')) return // Suppported in drive
+      if (s.includes('list-checked')) return // Supported in drive
       if (s.includes('animate-')) return // Not used in Finn repos
       if (classesToIgnore.includes(s.replace('.', ''))) return
       selectors.add(s)
